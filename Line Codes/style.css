@@ -1,0 +1,30 @@
+.form-group {
+  width: 50vw;
+  position: relative;
+  left: 25vw;
+  margin-top: 50px;
+}
+
+.btn {
+  margin: 20px 0px;
+}
+
+.encoding {
+  margin: 30px;
+}
+
+.array {
+  text-align: center;
+  margin: 20px;
+  font-size: 120%;
+}
+
+.barray {
+  text-align: center;
+  margin: 20px;
+}
+
+.array span {
+  margin: 10px;
+  padding: 10px;
+}

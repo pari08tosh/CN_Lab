@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <title>IP</title>
+</head>
+  <h1 style="text-align: center">Digital Data Plotter</h1>
+  <div class="form-group">
+    <label for="websiteName">Enter Numbers</label>
+    <input type="text" class="form-control"  id="inputString"/>
+    <button class='btn btn-sm btn-info' id="addBtn" type="submit">Add Number(s)</button>
+    <button class='btn btn-sm btn-success' id="submitBtn" type="submit">Go</button>
+  </div>
+  <div class="array">
+    <h3>Your Array</h3>
+  </div>
+  <div class="barray">
+    <h3>Binary Array</h3>
+  </div>
+  <div class="encoding">
+    <h4>NRZ Encoding</h4>
+    <canvas id="myCanvasNRZ" width="1300px" height="150px" style="border:1px solid #000000;">
+    </canvas>
+  </div>
+  <div class="encoding">
+    <h4>RZ Encoding</h4>
+    <canvas id="myCanvasRZ" width="1300px" height="150px" style="border:1px solid #000000;">
+    </canvas>
+  </div>
+  <div class="encoding">
+    <h4>GE Thomas Manchester Encoding</h4>
+    <canvas id="myCanvasMan" width="1300px" height="200px" style="border:1px solid #000000;">
+    </canvas>
+  </div>
+  <div class="encoding">
+    <h4>Differential Manchester Encoding</h4>
+    <canvas id="myCanvasDiffMan" width="1300px" height="200px" style="border:1px solid #000000;">
+    </canvas>
+  </div>
+<body>
+</body>
+</html>
