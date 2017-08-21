@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+  <title>IP</title>
+</head>
+  <h1 style="text-align: center">Error Detection Techniques</h1>
+  <br/>
+  <div class="paritycheck">
+    <h3>1D Parity Checker</h3>
+    <div class="form-group">
+      <label for="parityString">Enter Binary String</label>
+      <input type="text" class="form-control" name="parityString" id="parityString"/>
+    </div>
+    <div class="form-group">
+      <label for="parityBit">Enter Parity Bit</label>
+      <input type="text" class="form-control" name="parityBit" id="parityBit"/>
+    </div>
+    <button class="btn btn-success btn-sm 1d-parity-submit" onclick="paritycheck1d()">Submit</button>
+    <div class="parityResult1d" style="text-align: center;"></div>
+  </div>
+  <hr>
+  <div class="paritycheck">
+    <h3>2D Parity Checker</h3>
+    <div class="form-group">
+      <label for="parityString">Enter Binary String</label>
+      <input type="text" class="form-control" name="parityString" id="parityString2d" placeholder="32 bits"/>
+    </div>
+    <div class="form-group">
+      <label for="parityBit">Enter Parity Bit String</label>
+      <input type="text" class="form-control" name="parityBit" id="parityBit2d" placeholder="9bits"/>
+    </div>
+    <button class="btn btn-success btn-sm 2D-parity-submit" onclick="paritycheck2d()">Submit</button>
+    <div class="parityResult2d" style="text-align: center;"></div>
+  </div>
+  <hr>
+  <div class="paritycheck">
+    <div class="checksum">
+      <h3>Checksum Parity Checker</h3>
+      <div class="form-group">
+        <label for="parityString">Enter Binary String</label>
+        <input type="text" class="form-control" name="parityString" id="parityStringChecksum" placeholder="32 bits"/>
+      </div>
+      <div class="form-group">
+        <label for="parityBit">Enter Checksum</label>
+        <input type="text" class="form-control" name="parityBit" id="parityBitChecksum" placeholder="8 bits"/>
+      </div>
+      <button class="btn btn-success btn-sm 2D-parity-submit" onclick="paritycheckChecksum()">Submit</button>
+      <div class="parityResultChecksum" style="text-align: center;"></div>
+    </div>
+  </div>
+<body>
+</body>
+</html>
